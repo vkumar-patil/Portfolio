@@ -11,14 +11,14 @@ const data = [
   },
   {
     id: 2,
-    Name: "Real_Estate",
+    Name: "Ecomers",
     technologies: "MERN Stack",
     image: EcomerseImg,
     gethub: "https://github.com/vkumar-patil/Ecomers_frontend",
   },
   {
     id: 3,
-    Name: "Real_Estate",
+    Name: "Event_Manegment",
     technologies: "MERN Stack",
     image: EventManegImg,
     gethub: "https://github.com/vkumar-patil/eventregi_frontend",

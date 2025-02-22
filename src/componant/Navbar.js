@@ -12,13 +12,13 @@ function Navbar() {
           <a href="#about" className="hover:text-gray-400">
             About Me
           </a>
-          <a href="#services" className="hover:text-gray-400">
+          {/* <a href="#services" className="hover:text-gray-400">
             Services
-          </a>
-          <a href="#products" className="hover:text-gray-400">
+          </a> */}
+          <a href="#projects" className="hover:text-gray-400">
             Projects
           </a>
-          <a href="#contact" className="hover:text-gray-400">
+          <a href="#Contact" className="hover:text-gray-400">
             Contact
           </a>
         </div>
