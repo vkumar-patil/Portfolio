@@ -10,7 +10,7 @@ function Navbar() {
             Home
           </a>
           <a href="#about" className="hover:text-gray-400">
-            About Me
+            About-Me
           </a>
           {/* <a href="#services" className="hover:text-gray-400">
             Services
@@ -22,9 +22,14 @@ function Navbar() {
             Contact
           </a>
         </div>
-        <button className="bg-gradient-to-r from-green-400 to-yellow-400 text-white hidden md:inline transform transition-transform duration-300 hover:scale-110 px-4 py-2 rounded-full ">
-          Connect Me
-        </button>
+        <a
+          href="https://wa.me/917219066757?text=Hello%20there!%20I%20want%20to%20connect%20with%20you"
+          target="_blank"
+        >
+          <button className="bg-gradient-to-r from-green-400 to-red-400 h-10 rounded-full md:font-bold px-2">
+            WhatsApp
+          </button>
+        </a>
       </div>
     </nav>
   );

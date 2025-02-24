@@ -2,7 +2,11 @@ import React from "react";
 import AboutImg from "../assets/images/coder.svg";
 function About() {
   return (
-    <div className=" bg-black text-white py-20 " id="about" style={{width:"100%"}}>
+    <div
+      className=" bg-black text-white py-20 "
+      id="about"
+      style={{ width: "100%" }}
+    >
       <div className="container mx-auto px-8 md:px-16 lg:px-24">
         <h2 className="text-4xl font-bold text-center mb-12">About Me</h2>
         <div className="flex flex-col md:flex-row items-center md:space-x-12">
@@ -17,44 +21,54 @@ function About() {
               uqwehduehduehudh quhuqhuehuehfuhru ufhuewhfuwehufhuwe uwhefuhweuhf
               uwfhuwehufhu wufhuwehfuheru wufhuwerhfu
             </p>
-            <div className="space-y-4">
-              <div className="flex items-center">
-                <label htmlFor="htmlcss" className="w-2/12">
+            <div className="text-center">
+              <div
+                className="bg-gradient-to-r from-violet-600 to-blue-300 items-center h-7 rounded-full mb-3"
+                style={{ width: "60%" }}
+              >
+                <p className="text-white font-extrabold text-center ">
                   HTML & CSS
-                </label>
-                <div className="grow bh-gray-800 rounded-full h-2.5">
-                  <div className="bg-gradient-to-r from-green-400 to-yellow-400 text-white  transform transition-transform duration-300 hover:scale-110 w-10/12 rounded-full h-2.5"></div>
-                </div>
+                </p>
               </div>
-            </div>
-            <div className="space-y-4">
-              <div className="flex items-center">
-                <label htmlFor="htmlcss" className="w-2/12">
+              <div
+                className="bg-gradient-to-r from-violet-500 to-blue-300 items-center h-8 rounded-full mb-3 "
+                style={{ width: "60%" }}
+              >
+                <p className="text-white font-extrabold text-center">
+                  javaScript & React.js
+                </p>
+              </div>
+              <div
+                className="bg-gradient-to-r from-violet-400 to-blue-300 items-center h-8 rounded-full mb-3 "
+                style={{ width: "60%" }}
+              >
+                <p className="text-white font-extrabold text-center">
+                  Node.js & MongoDB
+                </p>
+              </div>
+              <div
+                className="bg-gradient-to-r from-violet-400 to-blue-400 items-center h-8 rounded-full mb-3 "
+                style={{ width: "60%" }}
+              >
+                <p className="text-white font-extrabold text-center">
                   BootStrap & Tailwind
-                </label>
-                <div className="grow bh-gray-800 rounded-full h-2.5">
-                  <div className="bg-gradient-to-r from-green-400 to-yellow-400 text-white  transform transition-transform duration-300 hover:scale-110 w-10/12 rounded-full h-2.5"></div>
-                </div>
+                </p>
               </div>
-            </div>
-            <div className="space-y-4">
-              <div className="flex items-center">
-                <label htmlFor="htmlcss" className="w-2/12">
-                  React & JavaScript
-                </label>
-                <div className="grow bh-gray-800 rounded-full h-2.5">
-                  <div className="bg-gradient-to-r from-green-400 to-yellow-400 text-white  transform transition-transform duration-300 hover:scale-110 w-9/12 rounded-full h-2.5"></div>
-                </div>
+              <div
+                className="bg-gradient-to-r from-slate-400 to-blue-500 items-center h-8 rounded-full mb-3 "
+                style={{ width: "60%" }}
+              >
+                <p className="text-white font-extrabold text-center">
+                  Github & Postman
+                </p>
               </div>
-            </div>
-            <div className="space-y-4">
-              <div className="flex items-center">
-                <label htmlFor="htmlcss" className="w-2/12">
-                  MongoDB & MySQL
-                </label>
-                <div className="grow bh-gray-800 rounded-full h-2.5">
-                  <div className="bg-gradient-to-r from-green-400 to-yellow-400 text-white  transform transition-transform duration-300 hover:scale-110 w-8/12 rounded-full h-2.5"></div>
-                </div>
+              <div
+                className="bg-gradient-to-r from-slate-400 to-blue-600  center h-8 rounded-full mb-3 "
+                style={{ width: "60%" }}
+              >
+                <p className="text-white font-extrabold text-center">
+                  JWT & Multer
+                </p>
               </div>
             </div>
             <div className="mt-12 flex justify-between text-center">
@@ -65,7 +79,7 @@ function About() {
                 <p>month of experiance</p>
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-pink-400">
+                <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-pink-400 ">
                   5+
                 </h3>
                 <p>Projects complited</p>

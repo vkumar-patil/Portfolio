@@ -1,14 +1,38 @@
-import React from "react";
 import { FaEnvelope } from "react-icons/fa";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { FaHome } from "react-icons/fa";
+import emailjs from "@emailjs/browser";
+import { useState } from "react";
 
 function Contact() {
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
-    alert("form submit");
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await emailjs.send(
+        "service_ozpms79",
+        "template_cuqes0n",
+        {
+          user_name: name, // Match keys from your EmailJS template
+          user_email: email,
+          user_message: message,
+        },
+        "laEo5x78PZOgnZFnm"
+      );
+      console.log("SUCCESS:", response);
+      alert("Message sent successfully!");
+      setName("");
+      setEmail("");
+      setMessage("");
+    } catch (error) {
+      console.error("EmailJS Error:", error);
+      alert("Failed to send message. Check the console for details.");
+    }
   };
+
   return (
     <div className="bg-black text-white py-20" id="Contact">
       <h1 className="text-4xl font-bold text-center mb-12">Contact Me</h1>
@@ -47,6 +71,8 @@ function Contact() {
               placeholder="Enter Your Name"
               style={{ height: "30px", width: "100%" }}
               className="rounded-lg bg-slate-500"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
             />
             <h4 className="mt-3 font-bold">Email</h4>
             <input
@@ -55,6 +81,8 @@ function Contact() {
               placeholder="Enter Your Email"
               style={{ height: "30px", width: "100%" }}
               className="rounded-lg bg-slate-500"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
             <h4 className="mt-4 font-bold">Message</h4>
             <textarea
@@ -62,6 +90,8 @@ function Contact() {
               placeholder="Enter Your Message"
               className="h-40   rounded-lg bg-slate-500"
               style={{ width: "100%" }}
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
             />
             <button
               type="submit"
@@ -77,3 +107,6 @@ function Contact() {
 }
 
 export default Contact;
+//service_ID:service_ozpms79
+//public_ID:laEo5x78PZOgnZFnm
+//template_ID:template_fskymsk

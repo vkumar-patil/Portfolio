@@ -1,5 +1,5 @@
 import React from "react";
-import mainimg from "../assets/images/Portfolio_logo.png";
+import mainimg from "../assets/images/5[1].jpg";
 function Hero() {
   return (
     <div className="bg-black text-white py-16 text-center">
@@ -11,7 +11,7 @@ function Hero() {
       <h1 className="text-4xl font-bold">
         I'm
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-yellow-400">
-          Vijay p
+          Vijay
         </span>
         MERN Stack Developer
       </h1>
@@ -19,13 +19,20 @@ function Hero() {
         I specialize in building modern and responsive web applications
       </p>
       <div className="mt-8 space-x-4">
-        <button className="bg-gradient-to-r from-green-400 to-yellow-400 text-white hidden md:inline transform transition-transform duration-300 hover:scale-110 px-4 py-2 rounded-full">
-          Contact with me
-        </button>
-
-        <button className="bg-gradient-to-r from-pink-500 to-yellow-400 text-white hidden md:inline transform transition-transform duration-300 hover:scale-110 px-4 py-2 rounded-full">
-          Resume
-        </button>
+        <a href="tel:7219066757">
+          <button className="bg-gradient-to-r from-green-400 to-yellow-400 text-white hidden md:inline transform transition-transform duration-300 hover:scale-110 px-4 py-2 rounded-full">
+            Contact with me
+          </button>
+        </a>
+        <a
+          href="/assets/pdf/Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="bg-gradient-to-r from-green-300 to-violet-500 h10 px-4 py-2 rounded-full">
+            View Resume
+          </button>
+        </a>
       </div>
     </div>
   );
