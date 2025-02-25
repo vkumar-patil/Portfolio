@@ -2,7 +2,7 @@ import React from "react";
 import mainimg from "../assets/images/5[1].jpg";
 function Hero() {
   return (
-    <div className="bg-black text-white py-16 text-center">
+    <div className="bg-black text-white py-16 text-center mt-20">
       <img
         src={mainimg}
         alt=""
