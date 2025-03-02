@@ -15,61 +15,49 @@ function About() {
             alt=""
             className="w-72 h-80 rounded object-cover mb-8 md:mb-0"
           />
-          <div className="flex-1">
+          <div className="flex-1 mx-auto">
             <p className="text-lg mb-8">
-              jjjdjhhdfdnsdsdbhd jdhujd hdeudheuhde udhuehfduehd
-              uqwehduehduehudh quhuqhuehuehfuhru ufhuewhfuwehufhuwe uwhefuhweuhf
-              uwfhuwehufhu wufhuwehfuheru wufhuwerhfu
+              <strong>
+                I am a passionate MERN Stack Developer with a strong foundation
+                in frontend and backend development.
+              </strong>
+              With expertise in MongoDB, Express.js, React.js, and Node.js, I
+              specialize in building scalable, dynamic, and user-friendly web
+              applications. Currently, I am working as a Web Development Intern
+              at Skillfull Technologies, where I am gaining hands-on experience
+              in full-stack development and improving my skills in JavaScript,
+              RESTful APIs, authentication (JWT), and database management
+              (MongoDB, MySQL).
             </p>
-            <div className="text-center">
-              <div
-                className="bg-gradient-to-r from-violet-600 to-blue-300 items-center h-7 rounded-full mb-3"
-                style={{ width: "60%" }}
-              >
-                <p className="text-white font-extrabold text-center ">
-                  HTML & CSS
-                </p>
-              </div>
-              <div
-                className="bg-gradient-to-r from-violet-500 to-blue-300 items-center h-8 rounded-full mb-3 "
-                style={{ width: "60%" }}
-              >
-                <p className="text-white font-extrabold text-center">
-                  javaScript & React.js
-                </p>
-              </div>
-              <div
-                className="bg-gradient-to-r from-violet-400 to-blue-300 items-center h-8 rounded-full mb-3 "
-                style={{ width: "60%" }}
-              >
-                <p className="text-white font-extrabold text-center">
-                  Node.js & MongoDB
-                </p>
-              </div>
-              <div
-                className="bg-gradient-to-r from-violet-400 to-blue-400 items-center h-8 rounded-full mb-3 "
-                style={{ width: "60%" }}
-              >
-                <p className="text-white font-extrabold text-center">
-                  BootStrap & Tailwind
-                </p>
-              </div>
-              <div
-                className="bg-gradient-to-r from-slate-400 to-blue-500 items-center h-8 rounded-full mb-3 "
-                style={{ width: "60%" }}
-              >
-                <p className="text-white font-extrabold text-center">
-                  Github & Postman
-                </p>
-              </div>
-              <div
-                className="bg-gradient-to-r from-slate-400 to-blue-600  center h-8 rounded-full mb-3 "
-                style={{ width: "60%" }}
-              >
-                <p className="text-white font-extrabold text-center">
-                  JWT & Multer
-                </p>
-              </div>
+            <div className="bg-gradient-to-r from-violet-600 to-blue-300 items-center h-7 rounded-full mb-3">
+              <p className="text-white font-extrabold text-center ">
+                HTML & CSS
+              </p>
+            </div>
+            <div className="bg-gradient-to-r from-orange-500 to-blue-300 items-center h-8 rounded-full mb-3 ">
+              <p className="text-white font-extrabold text-center">
+                javaScript & React.js
+              </p>
+            </div>
+            <div className="bg-gradient-to-r from-pink-400 to-blue-300 items-center h-8 rounded-full mb-3 ">
+              <p className="text-white font-extrabold text-center">
+                Node.js & MongoDB
+              </p>
+            </div>
+            <div className="bg-gradient-to-r from-green-400 to-blue-400 items-center h-8 rounded-full mb-3 ">
+              <p className="text-white font-extrabold text-center">
+                BootStrap & Tailwind
+              </p>
+            </div>
+            <div className="bg-gradient-to-r from-yellow-400 to-blue-500 items-center h-8 rounded-full mb-3 ">
+              <p className="text-white font-extrabold text-center">
+                Github & Postman
+              </p>
+            </div>
+            <div className="bg-gradient-to-r from-slate-400 to-blue-600  center h-8 rounded-full mb-3 ">
+              <p className="text-white font-extrabold text-center">
+                JWT & Multer
+              </p>
             </div>
             <div className="mt-12 flex justify-between text-center">
               <div>

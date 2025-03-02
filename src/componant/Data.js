@@ -1,6 +1,6 @@
-import RealestateImg from "../assets/images/name-logo-white.svg";
-import EcomerseImg from "../assets/images/name-logo-black.svg";
-import EventManegImg from "../assets/images/contact-me.svg";
+import RealestateImg from "../assets/images/realestate_image.jpg";
+import EcomerseImg from "../assets/images/ecomerse.jpg";
+import EventManegImg from "../assets/images/Event_image.jpg";
 const data = [
   {
     id: 1,

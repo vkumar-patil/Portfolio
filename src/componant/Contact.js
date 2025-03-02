@@ -11,25 +11,34 @@ function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (!name || !email || !message) {
+      alert("Please fill in all fields.");
+      return;
+    }
+
     try {
       const response = await emailjs.send(
         "service_ozpms79",
         "template_cuqes0n",
         {
-          user_name: name, // Match keys from your EmailJS template
+          user_name: name,
           user_email: email,
           user_message: message,
         },
         "laEo5x78PZOgnZFnm"
       );
+
       console.log("SUCCESS:", response);
       alert("Message sent successfully!");
+
+      // Reset Form State
       setName("");
       setEmail("");
       setMessage("");
     } catch (error) {
       console.error("EmailJS Error:", error);
-      alert("Failed to send message. Check the console for details.");
+      alert("Failed to send message. Please try again later.");
     }
   };
 

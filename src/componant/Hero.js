@@ -2,7 +2,7 @@ import React from "react";
 import mainimg from "../assets/images/5[1].jpg";
 function Hero() {
   return (
-    <div className="bg-black text-white py-16 text-center mt-20">
+    <div className="bg-black text-white py-16 text-center " id="home">
       <img
         src={mainimg}
         alt=""
@@ -10,9 +10,9 @@ function Hero() {
       />
       <h1 className="text-4xl font-bold">
         I'm
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-yellow-400">
+        <strong className="text-transparent mx-2 bg-clip-text  bg-gradient-to-r from-green-400 to-yellow-400">
           Vijay
-        </span>
+        </strong>
         MERN Stack Developer
       </h1>
       <p className="mt-4 text-lg text-gray-300 ">
