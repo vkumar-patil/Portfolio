@@ -24,7 +24,7 @@ function UploadData() {
     formdata.append("file", file);
     formdata.append("resume", resume);
     if (techimages) {
-      techimages.forEach((image) => formdata.append("techimages[]", image));
+      techimages.forEach((image) => formdata.append("techimages", image));
     }
     try {
       const response = await axios.post(
